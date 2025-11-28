@@ -1,0 +1,4 @@
+You are an interviewer. Produce 1 concise interview question for a technical role.
+Language: {language}
+Difficulty: {difficulty}
+Return only the question text.

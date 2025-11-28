@@ -1,0 +1,118 @@
+.assessment-complete-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.assessment-complete-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+}
+
+.assessment-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.assessment-info {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.assessment-info p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.assessment-info strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.completion-message {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.completion-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.completion-message h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #065f46;
+    margin-bottom: 12px;
+}
+
+.completion-text {
+    font-size: 14px;
+    color: #047857;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.completion-subtext {
+    font-size: 13px;
+    color: #059669;
+    line-height: 1.5;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.btn-refresh,
+.btn-back-to-jobs {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-refresh {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.btn-refresh:hover {
+    background: #e5e7eb;
+}
+
+.btn-back-to-jobs {
+    background: #667eea;
+    color: white;
+}
+
+.btn-back-to-jobs:hover {
+    background: #5568d3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}

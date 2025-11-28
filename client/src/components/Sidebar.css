@@ -1,0 +1,372 @@
+/* Modern Aceternity-Style Sidebar */
+.modern-sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.modern-sidebar.collapsed {
+    width: 80px;
+}
+
+/* Animated Background Layers */
+.sidebar-bg-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, 
+        #667eea 0%, 
+        #764ba2 50%, 
+        #5B6FED 100%
+    );
+    z-index: 1;
+}
+
+.sidebar-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, 
+        rgba(139, 92, 246, 0.1) 0%, 
+        rgba(124, 58, 237, 0.2) 100%
+    );
+    backdrop-filter: blur(100px);
+    z-index: 2;
+}
+
+/* Floating Animated Orbs */
+.sidebar-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.3;
+    z-index: 3;
+    animation: float 20s ease-in-out infinite;
+}
+
+.orb-1 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #dc2626 0%, transparent 70%);
+    top: 10%;
+    left: -50px;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);
+    top: 50%;
+    right: -30px;
+    animation-delay: 7s;
+}
+
+.orb-3 {
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
+    bottom: 10%;
+    left: -40px;
+    animation-delay: 14s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -30px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+}
+
+/* Content Container */
+.sidebar-content {
+    position: relative;
+    z-index: 10;
+    displa
+}none;
+    }ay: ispl{
+        dllapse-btn 
+    .co    e;
+    }
+onlay: n   disp   l {
+  be   .nav-laav-text,
+ 
+    .nogo-text,  .l   
+  
+    }
+ idth: 80px;      w  ar {
+n-sideb
+    .moder 768px) {ax-width:
+@media (msive */Respon
+/* none;
+}
+   display: {
+ re foent::bev-link-contout-btn .nalog
+}
+
+.5;: #fca5a
+    color 0.15);55, 71, 87,a(2gbround: rackgent {
+    bink-contr .nav-ltn:hovelogout-b
+., 0.7);
+}
+55, 2555, 225ba(rg   color: -btn {
+ /
+.logoutn *Logout Butto
+}
+
+/* );
+    } scale(1.2 transform:6;
+       acity: 0.        op{
+
+    50% }e(1);
+    alsform: sc  tran     ;
+ acity: 1 op{
+       100%   0%, r {
+  icatoulse-indframes p
+
+@key: none;
+}isplay{
+    d-indicator d .activer.collapseeban-sid.moder}
+
+nfinite;
+-out is ease-inndicator 2: pulse-inimation
+    a, 38, 0.8);gba(220, 38: 0 0 8px rowox-shad
+    b%;dius: 50ra   border-2626;
+ : #dcround;
+    backg: 6px
+    heightwidth: 6px;
+    em;ght: 1r rie;
+    absolutposition:   {
+  dicator
+.active-in}
+38, 0.6);
+ 38, ba(220, 0 0 12px rgadow:
+    box-sh0 4px 4px 0;s: der-radiu  bor;
+  ef4444 100%)dc2626 0%, #deg, #adient(180r-grlinearound: backg  60%;
+   height: 
+   h: 4px;   widt
+ -50%);nslateY(: traform
+    transtop: 50%;: 0;
+        leftolute;
+ abs  position:ent: '';
+   {
+    content::beforeont.nav-link-cnk.active v-li);
+}
+
+.na15 0, 0, 0.0,gba( 4px 12px rhadow: 0box-s
+    : white;olor   c, 0.15);
+ 255, 255: rgba(255, kground   bac
+ ntent {v-link-co .naink.active.nav-l */
+atee St* Activ}
+
+/1);
+le(1.orm: sca
+    transficon {.nav-hover nav-link:05);
+}
+
+.e(1.X(0) scalnslate traransform:
+    tntent {ink-cohover .nav-ld .nav-link:pseidebar.colla-smodern
+.
+;
+}eX(4px)ranslattransform: t    r: white;
+lo co0.1);
+   255, 255, 55, nd: rgba(2  backgrou  t {
+link-contennav-over .
+.nav-link:hffects */er Eov
+}
+
+/* Hwidth: 0;: 0;
+    opacityxt {
+    sed .nav-te.collapern-sidebar
+}
+
+.modease;.2s acity 0nsition: optraowrap;
+    ite-space: n  wh: 1;
+   {
+    flex
+.nav-text}
+se;
+easform 0.3s ition: trantrans
+     0;ink:shrex-   flter;
+  cennt:contestify-    juer;
+s: centlign-itemx;
+    aay: fleispl    dav-icon {
+}
+
+.n5rem;
+ing: 0.87   padd
+ nter;t: cey-contenstif  ju{
+  ontent  .nav-link-c.collapsedn-sidebarmoderden;
+}
+
+. hidoverflow:
+    , 1);.4, 0, 0.2ier(0c-bezcubi all 0.3s  transition:  00;
+ -weight: 5m;
+    fontre: 0.9375-sizeontpx;
+    fadius: 12 border-r.8);
+    05, 25 255,(255, rgbalor:  co;
+  emrem 1r.875ng: 0 paddi
+   1rem;:   gap
+  nter;ms: ce  align-ite;
+  play: flex
+    dislative;ion: reositent {
+    pink-cont
+
+.nav-l1);
+}.4, 0, 0.2, ic-bezier(00.3s cubll ion: a   transit: 0;
+ ding
+    paddth: 100%;
+    witer;rsor: poin    cuent;
+transparbackground: 
+    der: none;   bor
+ e;ation: nonecor
+    text-dck;lay: blodisp    relative;
+n:     positionav-link {
+
+. Links */
+/* Nav0;
+}
+  margin:   ight: 0;
+ 0;
+    he   opacity:el {
+ av-labollapsed .ndebar.crn-si
+
+.mode;
+}s easeopacity 0.2sition:     trancase;
+pper: uransform-t text5rem;
+   rem 0.70.5gin: 0 0  mar1px;
+   r-spacing:  lette 600;
+   ight:    font-we;
+5reme: 0.687font-siz0.5);
+     255, 255, : rgba(255,   color
+ l {labe
+}
+
+.nav- 1rem;  padding: 0;
+  rem gap: 0.5mn;
+    coludirection: flex-
+    flex;display: {
+    ction}
+
+.nav-ses: 4px;
+rder-radiu   bo0.2);
+ 255, 255, , 55nd: rgba(2ckgrouba {
+    ollbar-thumbwebkit-scr::-ebar-nav
+.sid
+}
+th: 4px;r {
+    widlbarolsc:-webkit-sidebar-nav:
+}
+
+.n;hiddeverflow-x: to;
+    oow-y: auerfl  ov.5rem;
+  -top: 1ngpaddi   -between;
+ t: spaceennt-cotify  jus
+  ion: column;direct
+    flex-flex; display: 
+   x: 1; fle
+   bar-nav {*/
+.sideNavigation );
+}
+
+/* ale(1.05: sc transform);
+   , 255, 0.2gba(255, 255kground: r{
+    bace-btn:hover collaps;
+}
+
+.hrink: 0lex-s  fease;
+  s : all 0.2transitioninter;
+      cursor: po: white;
+     colorr;
+  centeify-content:   justr;
+ s: centeign-itemalflex;
+      display:   x;
+s: 8per-radiu
+    bord255, 0.2);a(255, 255,  rgbidolx srder: 1p
+    bo blur(10px);op-filter:
+    backdr, 0.1);55, 255(255, 2und: rgba    backgrox;
+ht: 32p heig32px;
+   width: tn {
+    
+.collapse-b}
+px;
+ng: 0.5pacitter-s    lerem 0 0 0;
+.25 0  margin:ht: 500;
+   font-weig
+   m;.75re-size: 0   font 0.7);
+  255, 255,r: rgba(255, colole {
+   ubtito-s
+}
+
+.log, 38, 0.3);0, 38 rgba(22 0 2px 8pxtext-shadow:
+    5px; -0.ng:acietter-sp lgin: 0;
+   00;
+    mareight: 7font-wrem;
+    25t-size: 1. fon   #dc2626;
+    color:
+ le {logo-tit
+.none;
+}
+-events: ter0;
+    poin   opacity: go-text {
+ llapsed .loebar.coid-s
+.moderne;
+}
+easy 0.2s ion: opacit   transit
+  1;  opacity:
+   0;idth:  min-wex: 1;
+      flgo-text {
+
+}
+
+.lo3);38, 38, 0.rgba(220, px 16px shadow: 0 6ox-    b.05);
+e(1sform: scalran
+    tver {hocon:o-i
+}
+
+.log 0.3s ease;allansition:  tr;
+   .1)0, 0, 0(0, x rgba4px 12pdow: 0   box-shak: 0;
+  -shrinexer;
+    flent: centontfy-c justier;
+   centms:    align-ite
+ splay: flex;  dipx;
+  us: 12adi-r    border);
+10px blur(lter:p-fi    backdro5, 0.15);
+5, 2525rgba(255, ound: kgrx;
+    bact: 48p   heigh
+ idth: 48px;
+    wgo-icon {.lo 0;
+}
+
+h:widt1;
+    min-lex: ;
+    f1rem: gapr;
+     centeitems:ign-alflex;
+    : isplayner {
+    dcontai
+}
+
+.logo-1rem;p: een;
+    ga space-betwt:ify-contenust
+    jer;: cent-items
+    alignex; flay: displ);
+   , 255, 0.1a(255, 255x solid rgb: 1per-bottom
+    bord1.5rem 2rem;ng: 0 {
+    paddibar-header 
+.side*/* Header }
+
+/5rem 0;
+ padding: 1. 100%;
+     height:
+  mn;ection: coluflex-dir
+    y: flex;

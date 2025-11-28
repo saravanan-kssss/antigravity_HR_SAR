@@ -1,0 +1,167 @@
+.candidates-page {
+    padding: 2rem 2.5rem;
+}
+
+.candidates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 1.5rem;
+}
+
+.candidate-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #F3F4F6;
+    transition: all 0.2s;
+}
+
+.candidate-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.candidate-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.candidate-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.candidate-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5B6FED 0%, #4A5FDC 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.125rem;
+    flex-shrink: 0;
+}
+
+.candidate-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 0.25rem 0;
+}
+
+.candidate-email {
+    font-size: 0.8125rem;
+    color: #6B7280;
+    margin: 0;
+}
+
+.score-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    flex-shrink: 0;
+}
+
+.score-high {
+    background: #10B981;
+    color: white;
+}
+
+.score-mid {
+    background: #F59E0B;
+    color: white;
+}
+
+.score-low {
+    background: #EF4444;
+    color: white;
+}
+
+.candidate-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #F3F4F6;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: #374151;
+}
+
+.detail-icon {
+    font-size: 1rem;
+}
+
+.detail-text {
+    flex: 1;
+}
+
+.candidate-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-card {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid;
+}
+
+.btn-view {
+    background: white;
+    color: #374151;
+    border-color: #D1D5DB;
+}
+
+.btn-view:hover {
+    background: #F9FAFB;
+}
+
+.btn-download {
+    background: #D1FAE5;
+    color: #065F46;
+    border-color: #10B981;
+}
+
+.btn-download:hover {
+    background: #A7F3D0;
+}
+
+.btn-delete {
+    background: white;
+    color: #DC2626;
+    border-color: #FCA5A5;
+    flex: 0 0 auto;
+    padding: 0.625rem;
+}
+
+.btn-delete:hover {
+    background: #FEF2F2;
+}

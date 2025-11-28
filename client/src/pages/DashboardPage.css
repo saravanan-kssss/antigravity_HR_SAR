@@ -1,0 +1,242 @@
+.dashboard-page {
+    padding: 2rem 2.5rem;
+    max-width: 1400px;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 0.25rem 0;
+}
+
+.page-subtitle {
+    color: #6B7280;
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+/* KPI Cards */
+.kpi-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.kpi-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #F3F4F6;
+}
+
+.kpi-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.kpi-content {
+    flex: 1;
+}
+
+.kpi-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6B7280;
+    letter-spacing: 0.5px;
+    margin: 0 0 0.375rem 0;
+}
+
+.kpi-value {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Content Section */
+.content-section {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #F3F4F6;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.btn-link {
+    color: #5B6FED;
+    background: none;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Assessment Table */
+.assessment-table-container {
+    overflow-x: auto;
+}
+
+.assessment-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.assessment-table thead {
+    background: #F9FAFB;
+}
+
+.assessment-table th {
+    padding: 0.875rem 1rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6B7280;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.assessment-table th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.assessment-table th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.assessment-table td {
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #374151;
+    border-bottom: 1px solid #F3F4F6;
+}
+
+.assessment-table tbody tr:hover {
+    background: #F9FAFB;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.status-completed {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.status-pending {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.status-gray {
+    background: #F3F4F6;
+    color: #6B7280;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 0.875rem;
+    border-radius: 6px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid;
+}
+
+.btn-primary {
+    background: #5B6FED;
+    color: white;
+    border-color: #5B6FED;
+}
+
+.btn-primary:hover {
+    background: #4A5FDC;
+}
+
+.btn-secondary {
+    background: white;
+    color: #374151;
+    border-color: #D1D5DB;
+}
+
+.btn-secondary:hover {
+    background: #F9FAFB;
+}
+
+.btn-warning {
+    background: white;
+    color: #D97706;
+    border-color: #FCD34D;
+}
+
+.btn-warning:hover {
+    background: #FEF3C7;
+}
+
+.btn-danger {
+    background: white;
+    color: #DC2626;
+    border-color: #FCA5A5;
+}
+
+.btn-danger:hover {
+    background: #FEF2F2;
+}
+
+.loading-state {
+    padding: 3rem;
+    text-align: center;
+    color: #9CA3AF;
+}
